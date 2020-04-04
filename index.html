@@ -12,6 +12,8 @@
 			</h2>
 			<button> HOME
 			</button>
+			<button> SELF ASSESSMENT
+			</button>
 			<button> World Stats
 			</button>
 			<button> India Stats (State Wise)
@@ -22,10 +24,10 @@
 			</button>
 			<button> FAQ
 			</button>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<!--<br><br><br><br><br><br><br><br><br><br><br><br>--><br><br><br>
 			<!-- FORM -->
 			<h3>
-				This form should be at the end of the page....
+				CONTACT US
 			</h3>
 			<form action="process.php", method="POST">
 				<label>NAME</label>
@@ -38,7 +40,67 @@
 				<input type="email" name="email" placeholder="Enter E-mail">
 				<br><br>
 				<label for="message">Message</label>
-   				 <textarea id="message" name="message" placeholder="Write the message.." style="height:120px"></textarea>
+   				 <textarea id="message" name="message" placeholder="Write the message.." style="height:120px"></textarea> <br><br>
+   				<input type="submit" name="submit" value="submit" >
+				</form> 
+
+   			<br><br><br>	 
+   			<!-- FORM #2 SELF ASSESSMENT TEST -->
+   			<h2> SELF ASSESSMENT TEST </h2>
+			<form action="process.php", method="POST">
+
+			<label>GENDER</label>
+			<select name="gender" placeholder="gender">
+    		<option value="Male">Male</option>
+    		<option value="Female">Female</option>
+    		<option value="Other">Others</option>
+    		</select>
+    		<br><br>
+
+    		<label>AGE</label>
+    		<input type="number" name="age" placeholder="Enter your age">
+    		<br><br>
+
+    		<label>ARE YOU EXPERIENCING ANY OF THESE SYMPTOMS (you may select more than 1)</label> <br><br>
+    	  	<input type="checkbox" name="symp1" value="symp1">
+  			<label for="symp1">Cough</label><br>
+  			<input type="checkbox" name="symp2" value="symp2">
+  			<label for="symp2">Fever</label><br>
+  			<input type="checkbox" name="symp3" value="symp3">
+  			<label for="symp3">Difficulty in Breathing</label><br>
+  			<input type="checkbox" name="nota" value="nota">
+  			<label for="nota">None of the Above</label><br><br><br>
+
+  			<label>HAVE YOU EVER HAD ANY OF THE FOLLOWING : </label> <br><br>
+    	  	<input type="checkbox" name="prev1" value="prev1">
+  			<label for="prev1">Diabetes</label><br>
+  			<input type="checkbox" name="prev2" value="prev2">
+  			<label for="prev2">Hypertension</label><br>
+  			<input type="checkbox" name="prev3" value="prev3">
+  			<label for="prev3">Lung Disease</label><br>
+  			<input type="checkbox" name="prev4" value="prev4">
+  			<label for="prev4">Heart Disease</label><br>
+  			<input type="checkbox" name="nota" value="nota">
+  			<label for="nota">None of the Above</label><br><br><br>
+
+  			<label>HAVE YOU TRAVELLED ANYWHERE INTERNATIONALLY IN THE LAST 14 DAYS?</label><br><br>
+  			<input type="radio" value="Yes">
+  			<label>Yes</label>
+  			<input type="radio" value="No">
+  			<label>No</label>
+  			<br><br><br>
+
+  			<label>WHICH OF THE FOLLOWING APPLY FOR YOU?</label><br><br>
+  			<input type="radio" name="case1" value="case1">
+  			<label for="case1">I have recently interacted or lived with someone who has tested positive for COVID-19</label> <br>
+  			<input type="radio" name="case2" value="case2">
+  			<label for="case2">I am a healthcare worker and I examined a COVID-19 confirmed case without protective gear</label> <br>
+  			<input type="radio" name="nota" value="nota">
+  			<label for="nota">None of the above</label> <br><br><br>
+
+  			</form> 
+
+
 
 		</body>
 </html>
